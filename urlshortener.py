@@ -1,11 +1,9 @@
 import pyshorteners
 
-url = input("Enter the url to shorten: ")
-
 def shorturl(url):
-
-        shortt=pyshorteners.Shortener()
+        short=pyshorteners.Shortener() 
         print("The shortened url is: ")
-        print(shortt.tinyurl.short(url))
-
+        print(short.tinyurl.short(url))
+        
+url = input("Enter the url to shorten: ")
 shorturl(url)
